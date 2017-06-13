@@ -1,0 +1,14 @@
+uuid: 6593e355-ecd8-4fba-8282-6fbd0542cddb
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.managerial_user
+  module:
+    - user
+id: user_remove_role_action.managerial_user
+label: 'Remove the Managerial user role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: managerial_user

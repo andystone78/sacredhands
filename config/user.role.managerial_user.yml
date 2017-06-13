@@ -1,0 +1,9 @@
+uuid: 185a8717-6989-4bc2-b5d6-8afc8cef37b7
+langcode: en
+status: true
+dependencies: {  }
+id: managerial_user
+label: 'Managerial user'
+weight: -9
+is_admin: null
+permissions: {  }

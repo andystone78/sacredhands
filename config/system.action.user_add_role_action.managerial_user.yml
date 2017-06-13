@@ -1,0 +1,14 @@
+uuid: dee828b0-e487-420d-b091-1e73db30ce20
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.managerial_user
+  module:
+    - user
+id: user_add_role_action.managerial_user
+label: 'Add the Managerial user role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: managerial_user
