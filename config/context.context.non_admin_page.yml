@@ -1,0 +1,63 @@
+uuid: 1cd00965-8bc6-4a91-b5b8-738ba2e87cc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: non_admin_page
+label: 'Non-admin page'
+group: null
+description: 'Any page not in the admin theme'
+requireAllConditions: false
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: bartik
+    negate: 0
+    uuid: ba115dc9-eace-4474-a044-bedc663479a0
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      b870e4fb-ad0b-418c-b38f-344e2e3145e6:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: 0
+        level: '1'
+        depth: '0'
+        region: primary_menu
+        weight: '-10'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: b870e4fb-ad0b-418c-b38f-344e2e3145e6
+      fbce7c24-db7e-4bcd-97cd-b4e7502f6f3f:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: fbce7c24-db7e-4bcd-97cd-b4e7502f6f3f
+      b30bd680-0f2e-46b1-91d1-1e79de8276a0:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: b30bd680-0f2e-46b1-91d1-1e79de8276a0
+    id: blocks
+    saved: false
+    uuid: 89065d8b-039a-441c-9db3-a4749b56fe9f
+weight: 0

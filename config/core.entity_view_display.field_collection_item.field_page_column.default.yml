@@ -1,0 +1,22 @@
+uuid: e0d71878-d1a0-4075-aa98-5fc934a952d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_page_column.field_body
+    - field_collection.field_collection.field_page_column
+  module:
+    - text
+id: field_collection_item.field_page_column.default
+targetEntityType: field_collection_item
+bundle: field_page_column
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

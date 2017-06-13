@@ -1,0 +1,61 @@
+uuid: 4cd52d8c-1c6f-461c-8ac0-f0da2e481a33
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+name: admin_page
+label: 'Admin page'
+group: null
+description: 'Any page in the admin theme'
+requireAllConditions: false
+disabled: false
+conditions:
+  current_theme:
+    id: current_theme
+    theme: seven
+    negate: 0
+    uuid: ec437803-65cd-4e09-aaaf-33d7f3525fb2
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      de64a8f9-265e-4ef9-a11b-cd8a24db6838:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: seven
+        unique: 0
+        uuid: de64a8f9-265e-4ef9-a11b-cd8a24db6838
+      3ffae39c-7f7c-4bb1-afc3-dd4339c8862e:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: pre_content
+        weight: '-1'
+        context_mapping: {  }
+        theme: seven
+        unique: 0
+        uuid: 3ffae39c-7f7c-4bb1-afc3-dd4339c8862e
+      a5234f12-c6e2-44f7-bbf9-82d09e697998:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: 0
+        region: pre_content
+        weight: '0'
+        context_mapping: {  }
+        theme: seven
+        unique: 0
+        uuid: a5234f12-c6e2-44f7-bbf9-82d09e697998
+    id: blocks
+    saved: false
+    uuid: 1608fd6e-9980-4e8f-9647-0289483ea68a
+weight: 0

@@ -1,0 +1,14 @@
+uuid: f37e2cd5-a4a0-4221-8fc0-d764f67e1c45
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrative_user
+  module:
+    - user
+id: user_remove_role_action.administrative_user
+label: 'Remove the Administrative user role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrative_user

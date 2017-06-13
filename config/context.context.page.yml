@@ -1,0 +1,47 @@
+uuid: 9b63b4de-ce85-4056-ac67-b78680c5ce66
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+name: page
+label: Page
+group: null
+description: 'Any page node'
+requireAllConditions: false
+disabled: false
+conditions:
+  node_type:
+    id: node_type
+    bundles: {  }
+    negate: 0
+    uuid: 8e7186af-6f2e-48df-b753-1a40d503923a
+    context_mapping:
+      node: '@node.node_route_context:node'
+  current_theme:
+    id: current_theme
+    theme: bartik
+    negate: 0
+    uuid: 15b77f16-8b4c-4937-8bce-48ce7ebb346d
+    context_mapping: {  }
+reactions:
+  blocks:
+    blocks:
+      b9a66e87-b4f8-46b9-80b7-d7408b695fc9:
+        id: 'views_block:page_columns-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: b9a66e87-b4f8-46b9-80b7-d7408b695fc9
+    id: blocks
+    saved: false
+    uuid: bd13a693-9ba8-415d-856c-248cab052c50
+weight: 0
