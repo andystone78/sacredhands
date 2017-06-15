@@ -36,7 +36,7 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content
-        weight: '0'
+        weight: '2'
         context_mapping: {  }
         theme: bartik
         unique: 0
