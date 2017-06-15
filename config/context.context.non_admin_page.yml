@@ -41,7 +41,7 @@ reactions:
         primary: 1
         secondary: 1
         region: content
-        weight: '1'
+        weight: '0'
         context_mapping: {  }
         theme: bartik
         unique: 0
@@ -52,7 +52,7 @@ reactions:
         provider: core
         label_display: 0
         region: content
-        weight: '0'
+        weight: '-1'
         context_mapping: {  }
         theme: bartik
         unique: 0
@@ -63,7 +63,7 @@ reactions:
         provider: system
         label_display: 0
         region: content
-        weight: '-1'
+        weight: '-2'
         context_mapping: {  }
         theme: bartik
         unique: 0
