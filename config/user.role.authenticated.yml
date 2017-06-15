@@ -10,4 +10,7 @@ weight: -8
 is_admin: false
 permissions:
   - 'access content'
+  - 'access contextual links'
+  - 'access toolbar'
   - 'use text format filtered_html'
+  - 'view the administration theme'

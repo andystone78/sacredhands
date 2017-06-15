@@ -6,4 +6,12 @@ id: managerial_user
 label: 'Managerial user'
 weight: -9
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access administration pages'
+  - 'access site in maintenance mode'
+  - 'create page content'
+  - 'create testimonial content'
+  - 'delete any page content'
+  - 'delete any testimonial content'
+  - 'edit any page content'
+  - 'edit any testimonial content'
