@@ -12,8 +12,8 @@ field_name: field_body
 entity_type: field_collection_item
 bundle: field_page_column
 label: Body
-description: ''
-required: false
+description: 'Body text for the column.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

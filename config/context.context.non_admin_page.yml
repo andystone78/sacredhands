@@ -41,7 +41,7 @@ reactions:
         primary: 1
         secondary: 1
         region: content
-        weight: '0'
+        weight: '1'
         context_mapping: {  }
         theme: bartik
         unique: 0
@@ -52,11 +52,22 @@ reactions:
         provider: core
         label_display: 0
         region: content
-        weight: '-1'
+        weight: '0'
         context_mapping: {  }
         theme: bartik
         unique: 0
         uuid: b30bd680-0f2e-46b1-91d1-1e79de8276a0
+      eecec138-5da0-4a1e-8d7d-9ae0e6ea718a:
+        id: system_messages_block
+        label: Messages
+        provider: system
+        label_display: 0
+        region: content
+        weight: '-1'
+        context_mapping: {  }
+        theme: bartik
+        unique: 0
+        uuid: eecec138-5da0-4a1e-8d7d-9ae0e6ea718a
     id: blocks
     saved: false
     uuid: 89065d8b-039a-441c-9db3-a4749b56fe9f

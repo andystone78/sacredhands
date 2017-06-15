@@ -11,8 +11,8 @@ id: field_collection_item.field_page_column.field_column_image
 field_name: field_column_image
 entity_type: field_collection_item
 bundle: field_page_column
-label: 'Column image'
-description: ''
+label: Image
+description: 'An optional title for the column.'
 required: false
 translatable: false
 default_value: {  }
