@@ -1,0 +1,46 @@
+// Grid
+
+.grid {
+
+	margin: 0 auto;
+	max-width: 1920px;
+	padding: 0 $grid-outer-padding;
+
+	@include breakpoint($tablet-small) {
+		padding: 0 $grid-outer-padding--tablet-small;
+	}
+
+	@include breakpoint($tablet) {
+		padding: 0 $grid-outer-padding--tablet;
+	}
+
+	@include breakpoint($desktop) {
+		padding: 0 $grid-outer-padding--desktop;
+	}
+
+	.grid__row {
+		display: block;
+
+		@include breakpoint($tablet-large) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.grid__col {
+		@include breakpoint($tablet-large) {
+			flex: 1;
+
+			&--main {
+				flex-grow: 2;
+				margin-right: 3%;
+			}
+		}
+	}
+
+	.grid__col--sidebar {
+		@include breakpoint($tablet-large) {
+			max-width: 600px;
+		}
+	}
+}

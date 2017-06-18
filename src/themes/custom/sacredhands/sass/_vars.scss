@@ -1,0 +1,32 @@
+
+// Sacredhands Theme
+
+
+//  Breakpoints
+//------------------------------------------------------------------------------
+$mobile: 'screen' pxtoem(320); // 320px and up
+$mobile-large: 'screen' pxtoem(480); // 496px and up
+$tablet-small: 'screen' pxtoem(600);
+$tablet: 'screen' pxtoem(768); // 800px and up
+$tablet-large: 'screen' pxtoem(940); // 1008px and up
+$desktop: 'screen' pxtoem(1200);
+$desktop-large: 'screen' pxtoem(1600);
+
+
+// Base
+$max-content-width: 1240px;
+$grid-outer-padding: 15px;
+$grid-outer-padding--tablet-small: 20px;
+$grid-outer-padding--tablet: 30px;
+$grid-outer-padding--desktop: 5%;
+$margin-bottom: pxtoem(20); // to be added to all components for consistency
+
+// Fonts
+//------------------------------------------------------------------------------
+$base-font-family: Helvetica, Arial, sans-serif;
+
+// Colours
+//------------------------------------------------------------------------------
+
+$black: #000;
+$white: #fff;
