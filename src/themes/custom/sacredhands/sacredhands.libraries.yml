@@ -1,5 +1,5 @@
-sacredhands:
-  version: 1.x
+global-styling:
+  version: 1.0
   css:
-    theme:
+    base:
       css/style.css: {}

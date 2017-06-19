@@ -6,5 +6,5 @@
 // $parent: the targets parent element font size (default: 16)
 //------------------------------------------
 @function pxtoem($target, $parent: 16) {
-    @return ($target / $parent)+0em;
+  @return ($target / $parent) + 0em;
 }

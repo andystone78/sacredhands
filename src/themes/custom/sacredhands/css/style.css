@@ -1,0 +1,77 @@
+/*
+Theme Name: ibb
+Author: Malgorzata Mlynarczyk
+Author URI: http://www.internet-bez-granic.com;
+Description: A custom theme for site Internet bez barier
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: accessible responsive
+*/
+.grid {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .grid {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .grid {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .grid {
+    padding: 0 5%;
+  }
+}
+
+.grid .grid__row {
+  display: block;
+}
+
+@media screen and (min-width: 58.75em) {
+  .grid .grid__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 58.75em) {
+  .grid .grid__col {
+    flex: 1;
+  }
+  .grid .grid__col--main {
+    flex-grow: 2;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (min-width: 58.75em) {
+  .grid .grid__col--sidebar {
+    max-width: 600px;
+  }
+}
+
+p {
+  margin: 0 1.25em;
+}
+
+.footer {
+  background: #97bf32;
+  color: #fff;
+  padding: 0.625em 0;
+  text-align: center;
+}
+
+.footer .grid__row {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

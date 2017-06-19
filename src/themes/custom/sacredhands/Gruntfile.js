@@ -51,8 +51,8 @@ module.exports = function(grunt) {
 
         grunt.task.run([
             'sasslint',
-            'jscs',
             'sass',
+            'jscs',
             'parker',
             'uglify'
         ]);

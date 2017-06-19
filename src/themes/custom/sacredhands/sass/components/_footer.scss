@@ -1,6 +1,12 @@
 // Footer
 
 .footer {
-	background: $black;
-}
+	background: $green1;
+	color: $white;
+	padding: pxtoem(10) 0;
+	text-align: center;
 
+	.grid__row {
+		display: block;
+	}
+}
