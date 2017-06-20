@@ -13,7 +13,7 @@ disabled: false
 conditions:
   current_theme:
     id: current_theme
-    theme: bartik
+    theme: sacredhands
     negate: 0
     uuid: ba115dc9-eace-4474-a044-bedc663479a0
     context_mapping: {  }
@@ -68,6 +68,68 @@ reactions:
         theme: bartik
         unique: 0
         uuid: eecec138-5da0-4a1e-8d7d-9ae0e6ea718a
+      ddf312ad-dd07-45c0-9ef0-7d69b6fc1ac6:
+        id: 'system_menu_block:main'
+        label: 'Main navigation'
+        provider: system
+        label_display: 0
+        level: '1'
+        depth: '0'
+        region: primary_menu
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: ddf312ad-dd07-45c0-9ef0-7d69b6fc1ac6
+      cd9c75e9-fae6-465f-810b-bcfcf71d5a76:
+        id: system_messages_block
+        label: Messages
+        provider: system
+        label_display: 0
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: cd9c75e9-fae6-465f-810b-bcfcf71d5a76
+      3cf39f4b-22bf-4b5a-a194-115d0e852ccb:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: 0
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: 3cf39f4b-22bf-4b5a-a194-115d0e852ccb
+      45aadd86-f6c3-4b8a-aeca-3c28a44c476b:
+        id: local_tasks_block
+        label: Tabs
+        provider: core
+        label_display: 0
+        primary: 1
+        secondary: 1
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: 45aadd86-f6c3-4b8a-aeca-3c28a44c476b
+      55e899cf-bd67-459a-9f96-811dffb3a9c3:
+        id: 'block_content:95e54f16-3b70-4e44-a3b4-e748163de178'
+        label: 'Footer content'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: 55e899cf-bd67-459a-9f96-811dffb3a9c3
     id: blocks
     saved: false
     uuid: 89065d8b-039a-441c-9db3-a4749b56fe9f

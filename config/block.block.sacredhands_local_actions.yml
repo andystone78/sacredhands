@@ -1,0 +1,20 @@
+uuid: 40bc5afb-a8a6-40f0-af94-244ca9964782
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sacredhands
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: sacredhands_local_actions
+theme: sacredhands
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

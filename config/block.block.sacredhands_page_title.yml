@@ -1,0 +1,20 @@
+uuid: 8fdb63d9-9dbc-4c6d-bb97-6ec57df0ea48
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sacredhands
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: sacredhands_page_title
+theme: sacredhands
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

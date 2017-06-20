@@ -21,7 +21,7 @@ conditions:
       node: '@node.node_route_context:node'
   current_theme:
     id: current_theme
-    theme: bartik
+    theme: sacredhands
     negate: 0
     uuid: 15b77f16-8b4c-4937-8bce-48ce7ebb346d
     context_mapping: {  }
@@ -41,6 +41,19 @@ reactions:
         theme: bartik
         unique: 0
         uuid: b9a66e87-b4f8-46b9-80b7-d7408b695fc9
+      b6868fbf-cfd0-4fa3-8665-77d66fce60dc:
+        id: 'views_block:page_columns-block_1'
+        label: ''
+        provider: views
+        label_display: visible
+        views_label: ''
+        items_per_page: none
+        region: content
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: b6868fbf-cfd0-4fa3-8665-77d66fce60dc
     id: blocks
     saved: false
     uuid: bd13a693-9ba8-415d-856c-248cab052c50
