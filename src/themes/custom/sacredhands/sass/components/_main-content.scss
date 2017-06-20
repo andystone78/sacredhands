@@ -1,0 +1,13 @@
+.main-content {
+	background: {
+		image: url('../images/shutterstock_128768312_3.jpg');
+		position: 43% 50%;
+		repeat: no-repeat;
+		size: cover;
+	}
+	color: $white;
+
+	.main-content__section {
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+}

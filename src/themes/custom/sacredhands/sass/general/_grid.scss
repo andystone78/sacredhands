@@ -1,46 +1,89 @@
 // Grid
 
+// Pattern variables
+$breakpoints:  (
+    mobile: 320px,
+    mobile-large: 480px, 
+    tablet-small: 600px,
+    tablet: 768px,
+    tablet-large: 940px,
+    desktop: 1200px,
+    desktop-large: 1600px
+);
+
+$columns:  (
+    mobile: 1,
+    mobile-large: 6,
+    tablet-small: 6,
+    tablet: 6,
+    tablet-large: 12,
+    desktop: 12,
+    desktop-large: 12
+);
+
+$gutters: (
+    mobile: 0,
+    mobile-large: 1 / 4,
+    tablet-small: 1 / 4,
+    tablet: 1 / 4,
+    tablet-large: 1 / 4,
+    desktop: 1 / 4,
+    desktop-large: 1 / 4
+);
+
+$adaptive: false;
+
 .grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: $max-content-width + (2*$grid-outer-padding--tablet);
 
-	margin: 0 auto;
-	max-width: 1920px;
-	padding: 0 $grid-outer-padding;
+    &__row {
+        @include break;
+        @include clearfix;
+        padding: 0 $grid-outer-padding;
 
-	@include breakpoint($tablet-small) {
-		padding: 0 $grid-outer-padding--tablet-small;
-	}
+        @include breakpoint($tablet) {
+            padding: 0 $grid-outer-padding--tablet;
+        }
 
-	@include breakpoint($tablet) {
-		padding: 0 $grid-outer-padding--tablet;
-	}
+        .grid__row {
+            padding: 0; // reset padding for nested grids
+        }
+    }
 
-	@include breakpoint($desktop) {
-		padding: 0 $grid-outer-padding--desktop;
-	}
+    @each $breakpoint, $width in $breakpoints {
 
-	.grid__row {
-		display: block;
+        @include breakpoint($width) {
 
-		@include breakpoint($tablet-large) {
-			display: flex;
-			justify-content: space-between;
-		}
-	}
+            $col-no: map-get($columns, $breakpoint);
+            $gutter-width: map-get($gutters, $breakpoint);
 
-	.grid__col {
-		@include breakpoint($tablet-large) {
-			flex: 1;
+            @include layout(layout($col-no $gutter-width));
 
-			&--main {
-				flex-grow: 2;
-				margin-right: 3%;
-			}
-		}
-	}
+            @if $adaptive {
+                width: map-get($grid-container-width, $breakpoint);
+            }
 
-	.grid__col--sidebar {
-		@include breakpoint($tablet-large) {
-			max-width: 600px;
-		}
-	}
+            @for $i from 1 through $col-no {
+                .grid__column--#{$breakpoint}-#{$i} {@include span($i of $col-no)}
+            }
+
+            @for $i from 1 through ($col-no) - 1 {
+                .grid__column--#{$breakpoint}-skip-#{$i} {
+                    @include push($i of $col-no);
+                }
+
+                // reset skip
+                .grid__column--#{$breakpoint}-skip-0 {
+                    margin-left: 0;
+                }
+            }
+
+            .grid__column--#{$breakpoint}-last {
+                float: right;
+                margin-right: 0;
+            }
+        }
+    }
 }

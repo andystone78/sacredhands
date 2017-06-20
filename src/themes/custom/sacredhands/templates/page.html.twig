@@ -43,26 +43,26 @@
   <div id="page-wrapper">
     <div id="page">
       <header id="header" class="header" aria-label="{{ 'Site header'|t }}">
-        <div class="section layout-container clearfix">
-          {{ page.secondary_menu }}
-          {{ page.header }}
-          {{ page.primary_menu }}
+        <div class="grid__row">
+          <div class="header__branding">
+            {{ page.header }}
+          </div>
+        </div>
+        <div class="grid__row">
+          <div class="header__nav">
+            {{ page.primary_menu }}
+          </div>
         </div>
       </header>
-      {% if page.highlighted %}
-        <div class="highlighted">
-          <aside class="layout-container section clearfix" role="complementary">
-            {{ page.highlighted }}
-          </aside>
-        </div>
-      {% endif %}
-      <div id="main-wrapper" class="layout-main-wrapper layout-container clearfix">
-        <div id="main" class="layout-main clearfix">
-          <main id="content" class="column main-content">
-            <section class="section">
-              <a id="main-content" tabindex="-1"></a>
-              {{ page.content }}
-            </section>
+      <div id="main-wrapper">
+        <div id="main">
+          <main id="content" class="main-content">
+            <div class="grid__row">
+              <section class="main-content__section">
+                <a id="main-content" tabindex="-1"></a>
+                {{ page.content }}
+                </section>
+              </div>
           </main>
         </div>
       </div>

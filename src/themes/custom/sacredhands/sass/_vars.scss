@@ -1,6 +1,37 @@
 
 // Sacredhands Theme
 
+// Base fonts
+@font-face {
+    font-family: 'Texgyreadventor'; 
+    src: url("../fonts/texgyreadventor-regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TexgyreadventorBold'; 
+    src: url("../fonts/texgyreadventor-bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'TexgyreadventorItalic'; 
+    src: url("../fonts/texgyreadventor-italic.otf") format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+// Secondary font
+
+@font-face {
+    font-family: 'Youth and beauty'; 
+    src: url("../fonts/youth-and-beauty.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 //  Breakpoints
 //------------------------------------------------------------------------------
@@ -23,8 +54,10 @@ $margin-bottom: pxtoem(20); // to be added to all components for consistency
 
 // Fonts
 //------------------------------------------------------------------------------
-$base-font-family: Helvetica, Arial, sans-serif;
-$secondary-font-family: Times New Roman;
+$base-font-family: 'Texgyreadventor', Arial, sans-serif;
+$base-font-family--bold: 'TexgyreadventorBold', Arial, sans-serif;
+$base-font-family--italic: 'TexgyreadventorItalic', Arial, sans-serif;
+$secondary-font-family: 'Youth and beauty', Arial, sans-serif;
 
 // Colours
 //------------------------------------------------------------------------------
@@ -33,3 +66,4 @@ $black: #000;
 $white: #fff;
 
 $green1: #97bf32;
+$green2: #81A32B;

@@ -1,3 +1,21 @@
+body {
+	font-family: $base-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $secondary-font-family;
+}
+
+a,
+a:link {
+	color: $white;
+}
+
 p {
-	margin: 0 $margin-bottom;
+	margin: 0 0 $margin-bottom;
 }
