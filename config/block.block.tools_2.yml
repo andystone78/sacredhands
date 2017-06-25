@@ -1,0 +1,24 @@
+uuid: 3f6a19ce-ceea-43dd-b60f-a1f2ea12715e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - sacredhands
+id: tools_2
+theme: sacredhands
+region: header
+weight: -1
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

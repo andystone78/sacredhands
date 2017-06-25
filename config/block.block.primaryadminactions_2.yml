@@ -1,0 +1,18 @@
+uuid: 30c4b048-3e5d-4364-acd0-d6d7e42aa141
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sacredhands
+id: primaryadminactions_2
+theme: sacredhands
+region: header
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

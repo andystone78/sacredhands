@@ -1,0 +1,23 @@
+uuid: 0b0b3acd-68c1-4cfe-a82b-9a724788e022
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sacredhands
+id: sitebranding
+theme: sacredhands
+region: header
+weight: -3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

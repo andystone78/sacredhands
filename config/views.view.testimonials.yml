@@ -53,10 +53,13 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 6
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -65,11 +68,15 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
-        type: default
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: ''
+          class: listing__items
       row:
         type: fields
         options:
@@ -88,8 +95,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '<cite>{{ title__value }}</cite>'
             make_link: false
             path: ''
             absolute: false
@@ -185,7 +192,7 @@ display:
           element_label_class: ''
           element_label_colon: false
           element_wrapper_type: ''
-          element_wrapper_class: ''
+          element_wrapper_class: blockquote__content
           element_default_classes: true
           empty: ''
           hide_empty: false
