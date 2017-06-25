@@ -130,6 +130,20 @@ reactions:
         theme: sacredhands
         unique: 0
         uuid: 55e899cf-bd67-459a-9f96-811dffb3a9c3
+      aee03187-3682-4450-800a-87b9c6dce046:
+        id: system_branding_block
+        label: 'Site branding'
+        provider: system
+        label_display: 0
+        use_site_logo: 1
+        use_site_name: 1
+        use_site_slogan: 1
+        region: header
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: aee03187-3682-4450-800a-87b9c6dce046
     id: blocks
     saved: false
     uuid: 89065d8b-039a-441c-9db3-a4749b56fe9f
