@@ -1,0 +1,38 @@
+.listing {
+	.listing__items {
+		list-style-type: none;
+		padding: 0;
+
+		@include breakpoint($tablet) {
+			 display: -webkit-box;
+  			display: -moz-box;
+  			display: -ms-flexbox;
+  			display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+	}
+
+	.listing__item {
+		margin-bottom: pxtoem(50);
+		padding: 0;
+
+		@include breakpoint($tablet) {
+			align-content: space-between;
+			display: -webkit-box;
+  			display: -moz-box;
+  			display: -ms-flexbox;
+  			display: -webkit-flex;
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: pxtoem(30);
+			width: 45%;
+		}
+
+		@include breakpoint($desktop) {
+			width: 30%;
+		}
+	}
+}
+

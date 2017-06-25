@@ -50,9 +50,8 @@ module.exports = function(grunt) {
         grunt.log.subhead('# => Running build...');
 
         grunt.task.run([
-            'sasslint',
+            //'sasslint',
             'sass',
-            'jscs',
             'parker',
             'uglify'
         ]);

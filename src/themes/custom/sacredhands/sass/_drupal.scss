@@ -1,0 +1,17 @@
+$tabs-li-bg-colour: rgba(0, 0, 0, 0.8);
+
+.tabs {
+	> li {
+		background-color: $tabs-li-bg-colour;
+		padding: 0;
+
+		.is-active {
+			color: #000;
+		}
+
+		a:focus,
+		a:hover {
+			color: #000;
+		}
+	}
+}

@@ -9,21 +9,27 @@
 	.navigation__menu-items {
 		margin: 0;
 		padding-top: pxtoem(10);
+
+		@include breakpoint($tablet-small) {
+			padding-top: pxtoem(5);
+		}
+
 	}
 
 	.navigation__menu-item {
 		display: inline-block;
 		margin-bottom: pxtoem(15);
+		padding: 0;
 		text-align: center;
 		width: 49%;
 
 		@include breakpoint($tablet-small) {
-			margin-right: 5%;
+			margin: 0 5% pxtoem(10) 0;
 			width: auto;
 		}
 
 		@include breakpoint($tablet-large) {
-			margin-right: 10%;
+			margin-right: 7%;
 		}
 
 
@@ -39,9 +45,11 @@
 			font-family: $base-font-family--italic;
 			padding: pxtoem(10);
 			text-decoration: none;
+			transition: all 0.15s;
 
-			&:focus {
-				text-decoration: underline;
+			&:focus,
+			&:hover {
+				text-shadow: 1px 1px 1px $black;
 			}
 		}
 	}
@@ -63,7 +71,7 @@
 				display: block;
 				height: pxtoem(20);
 				position: absolute;
-				top: pxtoem(55);
+				top: pxtoem(50);
 				width: 100%;
 			}
 		}

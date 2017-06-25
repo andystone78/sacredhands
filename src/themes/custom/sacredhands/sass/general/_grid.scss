@@ -4,31 +4,19 @@
 $breakpoints:  (
     mobile: 320px,
     mobile-large: 480px, 
-    tablet-small: 600px,
-    tablet: 768px,
-    tablet-large: 940px,
-    desktop: 1200px,
-    desktop-large: 1600px
+    tablet-large: 940px
 );
 
 $columns:  (
     mobile: 1,
     mobile-large: 6,
-    tablet-small: 6,
-    tablet: 6,
-    tablet-large: 12,
-    desktop: 12,
-    desktop-large: 12
+    tablet-large: 12
 );
 
 $gutters: (
     mobile: 0,
-    mobile-large: 1 / 4,
-    tablet-small: 1 / 4,
-    tablet: 1 / 4,
-    tablet-large: 1 / 4,
-    desktop: 1 / 4,
-    desktop-large: 1 / 4
+    mobile-large: 1 / 2,
+    tablet-large: 3 / 4
 );
 
 $adaptive: false;
@@ -45,6 +33,14 @@ $adaptive: false;
 
         @include breakpoint($tablet) {
             padding: 0 $grid-outer-padding--tablet;
+        }
+
+        @include breakpoint($tablet-large) {
+            padding: 0 $grid-outer-padding--tablet-large;
+        }
+
+        @include breakpoint($desktop) {
+            padding: 0 $grid-outer-padding--desktop;
         }
 
         .grid__row {

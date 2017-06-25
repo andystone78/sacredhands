@@ -2,13 +2,65 @@ body {
 	font-family: $base-font-family;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 h1,
-h2,
+h2 {
+	font: {
+		family: $secondary-font-family;
+		weight: 400;
+	}
+	margin-top: 0;
+}
+
 h3,
 h4,
 h5,
 h6 {
-	font-family: $secondary-font-family;
+	font-family: $base-font-family;
+	margin-top: 0;
+}
+
+h1 {
+
+	font-size: pxtoem(40);
+	margin-bottom: pxtoem(30, 40);
+	text-align: center;
+
+	@include breakpoint($tablet-small) {
+		font-size: pxtoem(48);
+		text-align: left;
+	}
+}
+
+h2 {
+	font: {
+		size: pxtoem(28);
+		weight: 400;
+	}
+
+	@include breakpoint($tablet-small) {
+		font-size: pxtoem(30);
+	}
+
+}
+
+h3 {
+	font-size: pxtoem(30);
+}
+
+h4 {
+	font-size: pxtoem(24);
+}
+
+h5 {
+	font-size: pxtoem(20);
+}
+
+h6 {
+	font-size: pxtoem(16);
 }
 
 a,
@@ -16,6 +68,49 @@ a:link {
 	color: $white;
 }
 
+.skip-link {
+	background-color: $green1;
+}
+
 p {
 	margin: 0 0 $margin-bottom;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	padding-left: pxtoem(30);
+
+	li {
+		margin-bottom: pxtoem(5);
+		padding-left: pxtoem(5);
+	}
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+blockquote,
+.blockquote {
+	margin: 0 0 $margin-bottom;
+
+	cite {
+		display: block;
+		font: {
+			size: pxtoem(18);
+			style: normal;
+			weight: 700;
+		}
+		margin-bottom: pxtoem(15, 18);
+	} 
+
+	.blockquote__content {
+		border-left: 2px solid $white;
+		font-family: $base-font-family--italic;
+		margin-left: pxtoem(2);
+		padding: pxtoem(5) 0 pxtoem(1) pxtoem(15);
+	}
 }

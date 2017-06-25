@@ -46,10 +46,11 @@ $desktop-large: 'screen' pxtoem(1600);
 
 // Base
 $max-content-width: 1240px;
-$grid-outer-padding: 15px;
-$grid-outer-padding--tablet-small: 20px;
+$grid-outer-padding: 20px;
+$grid-outer-padding--tablet-small: 25px;
 $grid-outer-padding--tablet: 30px;
-$grid-outer-padding--desktop: 5%;
+$grid-outer-padding--tablet-large: 40px;
+$grid-outer-padding--desktop: 50px;
 $margin-bottom: pxtoem(20); // to be added to all components for consistency
 
 // Fonts

@@ -1,7 +1,7 @@
 .main-content {
 	background: {
 		image: url('../images/shutterstock_128768312_3.jpg');
-		position: 43% 50%;
+		position: 43% 10%;
 		repeat: no-repeat;
 		size: cover;
 	}
@@ -9,5 +9,27 @@
 
 	.main-content__section {
 		background-color: rgba(0, 0, 0, 0.5);
+		margin: 0 (-$grid-outer-padding);
+		padding: pxtoem(30) $grid-outer-padding;
+
+		@include breakpoint($tablet-small) {
+			margin: pxtoem(50) (-$grid-outer-padding--tablet-small);
+			padding: pxtoem(30) $grid-outer-padding--tablet-small;
+		}
+
+		@include breakpoint($tablet) {
+			margin: pxtoem(50) (-$grid-outer-padding--tablet);
+			padding: pxtoem(30) $grid-outer-padding--tablet;
+		}
+
+		@include breakpoint($tablet-large) {
+			margin: pxtoem(50) (-$grid-outer-padding--tablet-large);
+			padding: pxtoem(30) $grid-outer-padding--tablet-large;
+		}
+
+		@include breakpoint($desktop) {
+			margin: pxtoem(50) (-$grid-outer-padding--desktop);
+			padding: pxtoem(30) $grid-outer-padding--desktop;
+		}
 	}
 }
