@@ -488,6 +488,85 @@ blockquote .blockquote__content,
   background-color: #97bf32;
 }
 
+.header .header__branding {
+  background-color: #fff;
+  padding: 0.9375em 20px 0.625em;
+}
+
+@media screen and (min-width: 37.5em) {
+  .header .header__branding {
+    padding: 0.9375em 14% 0.625em;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .header .header__branding {
+    padding: 0.9375em 15% 0.625em;
+  }
+}
+
+@media screen and (min-width: 58.75em) {
+  .header .header__branding {
+    padding: 0.9375em 17% 0.625em;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .header .header__branding {
+    padding: 0.9375em 18% 0.625em;
+  }
+}
+
+.header .header__logo-wrapper {
+  background-image: url(../images/symbol_1.png), url(../images/symbol_2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center left, center right;
+  background-size: 50px, 55px;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 30em) {
+  .header .header__logo-wrapper {
+    background-size: 60px, 65px;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .header .header__logo-wrapper {
+    background-size: 75px, 85px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .header .header__logo-wrapper {
+    background-size: 100px, 110px;
+  }
+}
+
+.header .header__logo:focus {
+  outline: 1px dotted #97bf32;
+}
+
+.header .header__logo img {
+  height: auto;
+  max-width: 100%;
+  transition: all 0.1s;
+  width: 100px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .header .header__logo img {
+    width: 140px;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .header .header__logo img {
+    width: 180px;
+  }
+}
+
 .listing .listing__items {
   list-style-type: none;
   padding: 0;

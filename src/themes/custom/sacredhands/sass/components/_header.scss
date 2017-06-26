@@ -3,4 +3,74 @@
 
 .header {
 	background-color: $green1;
+
+	.header__branding {
+		background-color: $white;
+		padding: pxtoem(15) $grid-outer-padding pxtoem(10);
+
+		@include breakpoint($tablet-small) {
+			padding: pxtoem(15) 14% pxtoem(10);
+		}
+
+		@include breakpoint($tablet) {
+			padding: pxtoem(15) 15% pxtoem(10);
+		}
+
+		@include breakpoint($tablet-large) {
+			padding: pxtoem(15) 17% pxtoem(10);
+		}
+
+		@include breakpoint($desktop) {
+			padding: pxtoem(15) 18% pxtoem(10);
+		}
+	}
+
+	.header__logo-wrapper {
+		background: {
+  			image: url(../images/symbol_1.png), url(../images/symbol_2.png);
+  			repeat: no-repeat, no-repeat;
+  			position: center left, center right;
+  			size: 50px, 55px;
+  		}
+		display: block;
+		text-align: center;
+
+		@include breakpoint($mobile-large) {
+			background-size: 60px, 65px;
+		}
+
+		@include breakpoint($tablet-small) {
+			background: {
+				size: 75px, 85px;
+			}
+		}
+
+		@include breakpoint($desktop) {
+			background: {
+				size: 100px, 110px;
+			}
+		}
+	}
+	
+	.header__logo {
+
+		&:focus {
+			outline: 1px dotted $green1;
+		}
+
+		img {
+			height: auto;
+			max-width: 100%;
+			transition: all 0.1s;
+			width: 100px;
+
+			@include breakpoint($tablet-small) {
+				width: 140px;
+			}
+
+			@include breakpoint($desktop) {
+				width: 180px;
+			}
+		}
+	}
 }
