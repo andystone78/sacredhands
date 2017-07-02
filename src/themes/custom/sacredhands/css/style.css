@@ -673,6 +673,7 @@ blockquote .blockquote__content,
 
 .navigation .navigation__menu-item {
   display: inline-block;
+  line-height: 1.5em;
   margin-bottom: 0.9375em;
   padding: 0;
   text-align: center;
