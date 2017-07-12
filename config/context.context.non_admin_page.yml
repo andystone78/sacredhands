@@ -116,20 +116,6 @@ reactions:
         theme: sacredhands
         unique: 0
         uuid: 45aadd86-f6c3-4b8a-aeca-3c28a44c476b
-      55e899cf-bd67-459a-9f96-811dffb3a9c3:
-        id: 'block_content:95e54f16-3b70-4e44-a3b4-e748163de178'
-        label: 'Footer content'
-        provider: block_content
-        label_display: 0
-        region: footer
-        weight: '0'
-        status: true
-        info: ''
-        view_mode: full
-        context_mapping: {  }
-        theme: sacredhands
-        unique: 0
-        uuid: 55e899cf-bd67-459a-9f96-811dffb3a9c3
       aee03187-3682-4450-800a-87b9c6dce046:
         id: system_branding_block
         label: 'Site branding'
@@ -144,6 +130,20 @@ reactions:
         theme: sacredhands
         unique: 0
         uuid: aee03187-3682-4450-800a-87b9c6dce046
+      9801d44b-d686-4206-836a-4556c2e53cf1:
+        id: 'block_content:7bfcaaaf-c0b5-4aba-8a33-f955f028cd1b'
+        label: 'Footer text'
+        provider: block_content
+        label_display: 0
+        status: true
+        info: ''
+        view_mode: full
+        region: footer
+        weight: '0'
+        context_mapping: {  }
+        theme: sacredhands
+        unique: 0
+        uuid: 9801d44b-d686-4206-836a-4556c2e53cf1
     id: blocks
     saved: false
     uuid: 89065d8b-039a-441c-9db3-a4749b56fe9f
