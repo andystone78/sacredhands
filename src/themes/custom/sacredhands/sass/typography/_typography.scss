@@ -114,3 +114,13 @@ blockquote,
 		padding: pxtoem(5) 0 pxtoem(1) pxtoem(15);
 	}
 }
+
+input,
+textarea {
+	color: $grey1;
+	padding: pxtoem(5) pxtoem(10);
+}
+
+input[type="submit"] {
+	padding: pxtoem(5) pxtoem(25);
+}

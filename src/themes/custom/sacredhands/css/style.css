@@ -22,6 +22,15 @@ Tags: accessible responsive
   color: #000;
 }
 
+.toolbar-box {
+  border: 10px solid #green1;
+}
+
+.toolbar-box a,
+.toolbar-box a:link {
+  color: #565656;
+}
+
 @font-face {
   font-family: 'Texgyreadventor';
   src: url("../fonts/texgyreadventor-regular.otf") format("opentype");
@@ -465,6 +474,16 @@ blockquote .blockquote__content,
   font-family: "TexgyreadventorItalic", Arial, sans-serif;
   margin-left: 0.125em;
   padding: 0.3125em 0 0.0625em 0.9375em;
+}
+
+input,
+textarea {
+  color: #333;
+  padding: 0.3125em 0.625em;
+}
+
+input[type="submit"] {
+  padding: 0.3125em 1.5625em;
 }
 
 .footer {
